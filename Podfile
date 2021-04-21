@@ -7,5 +7,5 @@ target 'Meditate' do
 
   # Pods for Meditate
   pod 'Firebase/Auth'
-
+  pod 'Firebase/Database'
 end

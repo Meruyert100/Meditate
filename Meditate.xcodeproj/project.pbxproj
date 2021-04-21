@@ -72,13 +72,13 @@
 				13A6A4FA262AF6590091E606 /* AppDelegate.swift */,
 				13A6A4FC262AF6590091E606 /* SceneDelegate.swift */,
 				13A6A4FE262AF6590091E606 /* StartViewController.swift */,
+				13D9EB10262F545B000CA2CC /* SignUpViewController.swift */,
 				13A6A500262AF6590091E606 /* Main.storyboard */,
 				13D9EB0A262F48DD000CA2CC /* Assets.xcassets */,
 				13A6A505262AF65C0091E606 /* LaunchScreen.storyboard */,
 				13A6A508262AF65C0091E606 /* Info.plist */,
 				13A9F62A263097EA003F9DF0 /* GoogleService-Info.plist */,
 				13D9EB0D262F5450000CA2CC /* LoginViewController.swift */,
-				13D9EB10262F545B000CA2CC /* SignUpViewController.swift */,
 			);
 			path = Meditate;
 			sourceTree = "<group>";
@@ -373,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.meditateapp.Meditate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meditate.MeditateApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.meditateapp.Meditate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meditate.MeditateApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
