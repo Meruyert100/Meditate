@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		13A6A4FB262AF6590091E606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6A4FA262AF6590091E606 /* AppDelegate.swift */; };
 		13A6A4FD262AF6590091E606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6A4FC262AF6590091E606 /* SceneDelegate.swift */; };
-		13A6A4FF262AF6590091E606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6A4FE262AF6590091E606 /* ViewController.swift */; };
+		13A6A4FF262AF6590091E606 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6A4FE262AF6590091E606 /* StartViewController.swift */; };
 		13A6A502262AF6590091E606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A6A500262AF6590091E606 /* Main.storyboard */; };
-		13A6A504262AF65C0091E606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A6A503262AF65C0091E606 /* Assets.xcassets */; };
 		13A6A507262AF65C0091E606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A6A505262AF65C0091E606 /* LaunchScreen.storyboard */; };
+		13D9EB0B262F48DD000CA2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D9EB0A262F48DD000CA2CC /* Assets.xcassets */; };
+		13D9EB0E262F5450000CA2CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9EB0D262F5450000CA2CC /* LoginViewController.swift */; };
+		13D9EB11262F545B000CA2CC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9EB10262F545B000CA2CC /* SignUpViewController.swift */; };
+		8E840445A29438446D8B196E /* Pods_Meditate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB106058ED5C623F787F8F43 /* Pods_Meditate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13A6A4F7262AF6590091E606 /* Meditate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A6A4FA262AF6590091E606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13A6A4FC262AF6590091E606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13A6A4FE262AF6590091E606 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13A6A4FE262AF6590091E606 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		13A6A501262AF6590091E606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13A6A503262AF65C0091E606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13A6A506262AF65C0091E606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13A6A508262AF65C0091E606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13D9EB0A262F48DD000CA2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13D9EB0D262F5450000CA2CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		13D9EB10262F545B000CA2CC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6A20DC19FAC14EFB90FF7ECD /* Pods-Meditate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditate.debug.xcconfig"; path = "Target Support Files/Pods-Meditate/Pods-Meditate.debug.xcconfig"; sourceTree = "<group>"; };
+		A8675547C0BCDE9EE7AC33EA /* Pods-Meditate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditate.release.xcconfig"; path = "Target Support Files/Pods-Meditate/Pods-Meditate.release.xcconfig"; sourceTree = "<group>"; };
+		DB106058ED5C623F787F8F43 /* Pods_Meditate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E840445A29438446D8B196E /* Pods_Meditate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				13A6A4F9262AF6590091E606 /* Meditate */,
 				13A6A4F8262AF6590091E606 /* Products */,
+				FD5C4AE28C3039AB3D422D32 /* Pods */,
+				DD64F40CDA6FB197876ED090 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +69,33 @@
 			children = (
 				13A6A4FA262AF6590091E606 /* AppDelegate.swift */,
 				13A6A4FC262AF6590091E606 /* SceneDelegate.swift */,
-				13A6A4FE262AF6590091E606 /* ViewController.swift */,
+				13A6A4FE262AF6590091E606 /* StartViewController.swift */,
 				13A6A500262AF6590091E606 /* Main.storyboard */,
-				13A6A503262AF65C0091E606 /* Assets.xcassets */,
+				13D9EB0A262F48DD000CA2CC /* Assets.xcassets */,
 				13A6A505262AF65C0091E606 /* LaunchScreen.storyboard */,
 				13A6A508262AF65C0091E606 /* Info.plist */,
+				13D9EB0D262F5450000CA2CC /* LoginViewController.swift */,
+				13D9EB10262F545B000CA2CC /* SignUpViewController.swift */,
 			);
 			path = Meditate;
+			sourceTree = "<group>";
+		};
+		DD64F40CDA6FB197876ED090 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB106058ED5C623F787F8F43 /* Pods_Meditate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD5C4AE28C3039AB3D422D32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A20DC19FAC14EFB90FF7ECD /* Pods-Meditate.debug.xcconfig */,
+				A8675547C0BCDE9EE7AC33EA /* Pods-Meditate.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13A6A50B262AF65C0091E606 /* Build configuration list for PBXNativeTarget "Meditate" */;
 			buildPhases = (
+				B71179EECB36F96AF22A6BE8 /* [CP] Check Pods Manifest.lock */,
 				13A6A4F3262AF6590091E606 /* Sources */,
 				13A6A4F4262AF6590091E606 /* Frameworks */,
 				13A6A4F5262AF6590091E606 /* Resources */,
+				266533EDCC208AC50DD5B97B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +158,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				13A6A507262AF65C0091E606 /* LaunchScreen.storyboard in Resources */,
-				13A6A504262AF65C0091E606 /* Assets.xcassets in Resources */,
+				13D9EB0B262F48DD000CA2CC /* Assets.xcassets in Resources */,
 				13A6A502262AF6590091E606 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		266533EDCC208AC50DD5B97B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meditate/Pods-Meditate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meditate/Pods-Meditate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meditate/Pods-Meditate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71179EECB36F96AF22A6BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meditate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13A6A4F3262AF6590091E606 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13A6A4FF262AF6590091E606 /* ViewController.swift in Sources */,
+				13D9EB0E262F5450000CA2CC /* LoginViewController.swift in Sources */,
+				13A6A4FF262AF6590091E606 /* StartViewController.swift in Sources */,
 				13A6A4FB262AF6590091E606 /* AppDelegate.swift in Sources */,
 				13A6A4FD262AF6590091E606 /* SceneDelegate.swift in Sources */,
+				13D9EB11262F545B000CA2CC /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +360,7 @@
 		};
 		13A6A50C262AF65C0091E606 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A20DC19FAC14EFB90FF7ECD /* Pods-Meditate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +379,7 @@
 		};
 		13A6A50D262AF65C0091E606 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8675547C0BCDE9EE7AC33EA /* Pods-Meditate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
