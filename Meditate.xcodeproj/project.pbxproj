@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132A50FB26315D68004FD21F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A50FA26315D68004FD21F /* WelcomeViewController.swift */; };
 		13A6A4FB262AF6590091E606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6A4FA262AF6590091E606 /* AppDelegate.swift */; };
 		13A6A4FD262AF6590091E606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6A4FC262AF6590091E606 /* SceneDelegate.swift */; };
 		13A6A4FF262AF6590091E606 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6A4FE262AF6590091E606 /* StartViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		132A50FA26315D68004FD21F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		13A6A4F7262AF6590091E606 /* Meditate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A6A4FA262AF6590091E606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13A6A4FC262AF6590091E606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132A50FE26315F91004FD21F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13A6A4FE262AF6590091E606 /* StartViewController.swift */,
+				13D9EB10262F545B000CA2CC /* SignUpViewController.swift */,
+				13D9EB0D262F5450000CA2CC /* LoginViewController.swift */,
+				132A50FA26315D68004FD21F /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		132A50FF26315FA7004FD21F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13A6A505262AF65C0091E606 /* LaunchScreen.storyboard */,
+				13A6A4FA262AF6590091E606 /* AppDelegate.swift */,
+				13A6A4FC262AF6590091E606 /* SceneDelegate.swift */,
+				13D9EB0A262F48DD000CA2CC /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		132A510026315FC6004FD21F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				132A510126315FCC004FD21F /* Stroyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		132A510126315FCC004FD21F /* Stroyboards */ = {
+			isa = PBXGroup;
+			children = (
+				13A6A500262AF6590091E606 /* Main.storyboard */,
+			);
+			path = Stroyboards;
+			sourceTree = "<group>";
+		};
+		132A510226315FE2004FD21F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		13A6A4EE262AF6590091E606 = {
 			isa = PBXGroup;
 			children = (
@@ -69,16 +116,12 @@
 		13A6A4F9262AF6590091E606 /* Meditate */ = {
 			isa = PBXGroup;
 			children = (
-				13A6A4FA262AF6590091E606 /* AppDelegate.swift */,
-				13A6A4FC262AF6590091E606 /* SceneDelegate.swift */,
-				13A6A4FE262AF6590091E606 /* StartViewController.swift */,
-				13D9EB10262F545B000CA2CC /* SignUpViewController.swift */,
-				13A6A500262AF6590091E606 /* Main.storyboard */,
-				13D9EB0A262F48DD000CA2CC /* Assets.xcassets */,
-				13A6A505262AF65C0091E606 /* LaunchScreen.storyboard */,
+				132A510226315FE2004FD21F /* Models */,
+				132A510026315FC6004FD21F /* View */,
+				132A50FF26315FA7004FD21F /* Supporting Files */,
+				132A50FE26315F91004FD21F /* Controllers */,
 				13A6A508262AF65C0091E606 /* Info.plist */,
 				13A9F62A263097EA003F9DF0 /* GoogleService-Info.plist */,
-				13D9EB0D262F5450000CA2CC /* LoginViewController.swift */,
 			);
 			path = Meditate;
 			sourceTree = "<group>";
@@ -218,6 +261,7 @@
 				13D9EB0E262F5450000CA2CC /* LoginViewController.swift in Sources */,
 				13A6A4FF262AF6590091E606 /* StartViewController.swift in Sources */,
 				13A6A4FB262AF6590091E606 /* AppDelegate.swift in Sources */,
+				132A50FB26315D68004FD21F /* WelcomeViewController.swift in Sources */,
 				13A6A4FD262AF6590091E606 /* SceneDelegate.swift in Sources */,
 				13D9EB11262F545B000CA2CC /* SignUpViewController.swift in Sources */,
 			);

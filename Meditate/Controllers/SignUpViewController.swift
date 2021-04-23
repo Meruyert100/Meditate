@@ -10,8 +10,6 @@ import Firebase
 
 class SignUpViewController: UIViewController {
     
-    @IBOutlet weak var backButton: UIButton!
-    
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var passwordView: UIView!
@@ -44,6 +42,8 @@ class SignUpViewController: UIViewController {
     }
     
     private func loadUI() {
+        navigationController?.navigationBar.isHidden = true
+        
         nameView.layer.cornerRadius = 20
         emailView.layer.cornerRadius = 20
         passwordView.layer.cornerRadius = 20
@@ -62,7 +62,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func getStartedButtonPressed(_ sender: Any) {
@@ -72,6 +72,9 @@ class SignUpViewController: UIViewController {
                 Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     if let e = error {
                         print(e)
+                        let alert = UIAlertController(title: "Invalid Credentials", message: "Please check again", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     } else {
                         
                         if let uid = Auth.auth().currentUser?.uid {
@@ -84,7 +87,7 @@ class SignUpViewController: UIViewController {
                             Database.database().reference().child("users").child(uid).setValue(regObject)
                         }
                         
-                        
+                        self.performSegue(withIdentifier: "RegisterToWelcome", sender: self)
                     }
                 }
             } else {

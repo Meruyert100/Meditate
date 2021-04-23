@@ -20,6 +20,7 @@ class StartViewController: UIViewController {
     }
     
     private func loadUI() {
+        navigationController?.navigationBar.isHidden = true
         signUpButton.layer.cornerRadius = 30
     }
     
@@ -30,7 +31,8 @@ class StartViewController: UIViewController {
     }
     
     @objc func loginLabelPressed() {
-        present(LoginViewController(), animated: true, completion: nil)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }
