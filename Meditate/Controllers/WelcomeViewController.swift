@@ -15,12 +15,17 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var getStartedButton: UIButton!
     
     var name = ""
+    
+    override func loadView() {
+        super.loadView()
+        loadUserName()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         loadUI()
-        loadUserName()
+        //loadUserName()
     }
     
     private func loadUI() {

@@ -1,0 +1,157 @@
+//
+//  HomeViewController.swift
+//  Meditate
+//
+//  Created by Meruyert Tastandiyeva on 4/23/21.
+//
+
+import UIKit
+import Firebase
+
+class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var coursesCollectionView: UICollectionView!
+    @IBOutlet weak var choicesCollectionView: UICollectionView!
+    
+    var courses: [Course] = []
+    var choices: [Choice] = []
+    
+    var name = ""
+    
+    override func loadView() {
+        super.loadView()
+        loadUserName()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //loadUserName()
+        loadCourses()
+        loadChoices()
+    }
+    
+    private func loadCourses() {
+        let ref = Database.database().reference().child("courses")
+        
+        var imageLink = ""
+        var name = ""
+        var time = ""
+        
+        DispatchQueue.main.async {
+            ref.observe(DataEventType.value, with: { (snapshot) in
+                if let snap = snapshot.children.allObjects as? [DataSnapshot]{
+                    for (_,val) in snap.enumerated(){
+                        let course: [String: Any] = val.value as! [String : Any]
+                        imageLink = course["imageLink"] as! String
+                        name = course["name"] as! String
+                        time = course["time"] as! String
+                        self.courses.append(Course(imageLink: imageLink, name: name, time: time))
+                        DispatchQueue.main.async {
+                            self.coursesCollectionView.reloadData()
+                        }
+                    }
+                }
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+        }
+        
+        
+    }
+    
+    private func fetchImage(imageURL: String) -> UIImage {
+        let url = URL(string: imageURL)
+        
+        let imageData = try? Data(contentsOf: url!)
+        
+        let image = UIImage(data: imageData!)
+        
+        return image!
+    }
+    
+    private func loadChoices() {
+        let ref = Database.database().reference().child("choices")
+        
+        var imageLink = ""
+        var name = ""
+        var time = ""
+        
+        DispatchQueue.main.async {
+            ref.observe(DataEventType.value, with: { (snapshot) in
+                if let snap = snapshot.children.allObjects as? [DataSnapshot]{
+                    for (_,val) in snap.enumerated(){
+                        let course: [String: Any] = val.value as! [String : Any]
+                        imageLink = course["imageLink"] as! String
+                        name = course["name"] as! String
+                        time = course["time"] as! String
+                        self.choices.append(Choice(imageLink: imageLink, name: name, time: time))
+                        DispatchQueue.main.async {
+                            self.choicesCollectionView.reloadData()
+                        }
+                    }
+                }
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+        }
+        
+    }
+    private func loadUserName() {
+        let userID = Auth.auth().currentUser?.uid
+        let ref = Database.database().reference().child("users").child(userID!)
+
+        DispatchQueue.main.async {
+            ref.observeSingleEvent(of: .value, with: { (snapshot) in
+                let value = snapshot.value as? NSDictionary
+                self.name = value?["username"] as? String ?? ""
+                self.nameLabel.text = "Hi \(self.name), Welcome to M E D I T A T E"
+              }) { (error) in
+                print(error.localizedDescription)
+            }
+            
+        }
+    
+    }
+    
+}
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.coursesCollectionView {
+            return courses.count
+        }
+        return choices.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == self.coursesCollectionView {
+            let course = collectionView.dequeueReusableCell(withReuseIdentifier: "courseCell", for: indexPath) as! CourseCollectionViewCell
+            let url = courses[indexPath.row].imageLink
+            course.courseImageView!.image = fetchImage(imageURL: url!)
+            course.nameLabel.text = courses[indexPath.row].name
+            course.timeLabel.text = courses[indexPath.row].time
+            return course
+        } else {
+            let choice = collectionView.dequeueReusableCell(withReuseIdentifier: "choiceCell", for: indexPath) as! ChoicesCollectionViewCell
+            let url = choices[indexPath.row].imageLink
+            choice.choiceImageView!.image = fetchImage(imageURL: url!)
+            choice.nameLabel.text = choices[indexPath.row].name
+            choice.timeLabel.text = choices[indexPath.row].time
+            return choice
+        }
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+//    {
+//        if collectionView == self.coursesCollectionView {
+//            return CGSize(width: 180.0, height: 190.0)
+//        }
+//        else {
+//            return CGSize(width: 100.0, height: 100.0)
+//        }
+//    }
+    
+}
+
