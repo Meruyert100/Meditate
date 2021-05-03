@@ -72,9 +72,7 @@ class SignUpViewController: UIViewController {
                 Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     if let e = error {
                         print(e)
-                        let alert = UIAlertController(title: "Invalid Credentials", message: "Please check again", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        self.present(alert, animated: true, completion: nil)
+                        self.createAlert(title: "Invalid Credentials", message: "Please check again")
                     } else {
                         
                         if let uid = Auth.auth().currentUser?.uid {
@@ -91,9 +89,7 @@ class SignUpViewController: UIViewController {
                     }
                 }
             } else {
-                let alert = UIAlertController(title: "Check the Policy", message: "Please...", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+                self.createAlert(title: "Check the Policy", message: "Please...")
             }
         }
     }
@@ -119,6 +115,12 @@ extension SignUpViewController {
             passwordImageView.image = UIImage(named: "openEye")
             passwordTextField.isSecureTextEntry = false
         }
+    }
+    
+    private func createAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
 }

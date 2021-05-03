@@ -11,11 +11,11 @@ class CourseCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var courseImageView: UIImageView?
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel?
     
-    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel?
     
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var startButton: UIButton?
     
     override func awakeFromNib() {
         super.awakeFromNib()

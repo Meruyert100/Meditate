@@ -10,15 +10,19 @@ import Firebase
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel?
+    @IBOutlet weak var wishLabel: UILabel?
+    @IBOutlet weak var topLabel: UILabel?
     
-    @IBOutlet weak var coursesCollectionView: UICollectionView!
-    @IBOutlet weak var choicesCollectionView: UICollectionView!
+    @IBOutlet weak var coursesCollectionView: UICollectionView?
+    @IBOutlet weak var choicesCollectionView: UICollectionView?
     
     var courses: [Course] = []
     var choices: [Choice] = []
     
     var name = ""
+    
+    var activityView: UIActivityIndicatorView?
     
     override func loadView() {
         super.loadView()
@@ -27,9 +31,29 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //loadUserName()
+        loadUI()
+        showActivityIndicatory()
         loadCourses()
         loadChoices()
+    }
+    
+    private func loadUI() {
+        [nameLabel, wishLabel, topLabel, coursesCollectionView, choicesCollectionView].forEach {
+            $0?.isHidden = true
+        }
+    }
+    
+    private func showUI() {
+        [nameLabel, wishLabel, topLabel, coursesCollectionView, choicesCollectionView].forEach {
+            $0?.isHidden = false
+        }
+    }
+    
+    private func showActivityIndicatory() {
+        activityView = UIActivityIndicatorView(style: .gray)
+        activityView?.center = self.view.center
+        self.view.addSubview(activityView!)
+        activityView?.startAnimating()
     }
     
     private func loadCourses() {
@@ -49,7 +73,7 @@ class HomeViewController: UIViewController {
                         time = course["time"] as! String
                         self.courses.append(Course(imageLink: imageLink, name: name, time: time))
                         DispatchQueue.main.async {
-                            self.coursesCollectionView.reloadData()
+                            self.coursesCollectionView?.reloadData()
                         }
                     }
                 }
@@ -88,7 +112,9 @@ class HomeViewController: UIViewController {
                         time = course["time"] as! String
                         self.choices.append(Choice(imageLink: imageLink, name: name, time: time))
                         DispatchQueue.main.async {
-                            self.choicesCollectionView.reloadData()
+                            self.choicesCollectionView?.reloadData()
+                            self.activityView?.stopAnimating()
+                            self.showUI()
                         }
                     }
                 }
@@ -101,18 +127,18 @@ class HomeViewController: UIViewController {
     private func loadUserName() {
         let userID = Auth.auth().currentUser?.uid
         let ref = Database.database().reference().child("users").child(userID!)
-
+        
         DispatchQueue.main.async {
             ref.observeSingleEvent(of: .value, with: { (snapshot) in
                 let value = snapshot.value as? NSDictionary
                 self.name = value?["username"] as? String ?? ""
-                self.nameLabel.text = "Hi \(self.name), Welcome to M E D I T A T E"
-              }) { (error) in
+                self.nameLabel?.text = "Hi \(self.name), Welcome to M E D I T A T E"
+            }) { (error) in
                 print(error.localizedDescription)
             }
             
         }
-    
+        
     }
     
 }
@@ -130,8 +156,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let course = collectionView.dequeueReusableCell(withReuseIdentifier: "courseCell", for: indexPath) as! CourseCollectionViewCell
             let url = courses[indexPath.row].imageLink
             course.courseImageView!.image = fetchImage(imageURL: url!)
-            course.nameLabel.text = courses[indexPath.row].name
-            course.timeLabel.text = courses[indexPath.row].time
+            course.nameLabel?.text = courses[indexPath.row].name
+            course.timeLabel?.text = courses[indexPath.row].time
             return course
         } else {
             let choice = collectionView.dequeueReusableCell(withReuseIdentifier: "choiceCell", for: indexPath) as! ChoicesCollectionViewCell
@@ -143,15 +169,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-//    {
-//        if collectionView == self.coursesCollectionView {
-//            return CGSize(width: 180.0, height: 190.0)
-//        }
-//        else {
-//            return CGSize(width: 100.0, height: 100.0)
-//        }
-//    }
+    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+    //    {
+    //        if collectionView == self.coursesCollectionView {
+    //            return CGSize(width: 180.0, height: 190.0)
+    //        }
+    //        else {
+    //            return CGSize(width: 100.0, height: 100.0)
+    //        }
+    //    }
     
 }
 

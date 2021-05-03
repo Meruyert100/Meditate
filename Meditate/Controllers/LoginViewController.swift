@@ -18,13 +18,10 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
-    @IBOutlet weak var signUpLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         loadUI()
-        addGestureRecognizer()
     }
     
     private func loadUI() {
@@ -34,12 +31,6 @@ class LoginViewController: UIViewController {
         passwordView.layer.cornerRadius = 20
         
         loginButton.layer.cornerRadius = 30
-    }
-    
-    private func addGestureRecognizer() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(signUpLabelPressed))
-        signUpLabel.isUserInteractionEnabled = true
-        signUpLabel.addGestureRecognizer(tapGesture)
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
@@ -61,7 +52,4 @@ class LoginViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    @objc func signUpLabelPressed() {
-        self.performSegue(withIdentifier: "LoginToSignUp", sender: self)
-    }
 }

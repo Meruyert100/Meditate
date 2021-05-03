@@ -15,8 +15,6 @@ class ChoicesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var timeLabel: UILabel!
     
-    var cornerRadius: CGFloat = 5.0
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -26,7 +24,6 @@ class ChoicesCollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
         loadUI()
     }
-    
     
     private func loadUI() {
         choiceImageView?.layer.cornerRadius = 15
