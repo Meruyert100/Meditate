@@ -8,32 +8,39 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
+    
     @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet var loginLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadUI()
-        addGestureRecognizer()
     }
     
     private func loadUI() {
         navigationController?.navigationBar.isHidden = true
         signUpButton.layer.cornerRadius = 30
+        loginButton.layer.cornerRadius = 30
     }
     
-    private func addGestureRecognizer() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(loginLabelPressed))
-        loginLabel.isUserInteractionEnabled = true
-        loginLabel.addGestureRecognizer(tapGesture)
+    @IBAction func languageButtonPressed(_ sender: UIButton) {
+        if sender.tag == 1 {
+            signUpButton.setTitle(Helper.translate(title: "SIGN UP", lang: "kk"), for: .normal)
+            loginButton.setTitle(Helper.translate(title: "LOG IN", lang: "kk"), for: .normal)
+            Helper.selectedLanguage = "kk"
+        }
+        if sender.tag == 2 {
+            signUpButton.setTitle(Helper.translate(title: "SIGN UP", lang: "en"), for: .normal)
+            loginButton.setTitle(Helper.translate(title: "LOG IN", lang: "en"), for: .normal)
+            Helper.selectedLanguage = "en"
+        }
+        if sender.tag == 3 {
+            signUpButton.setTitle(Helper.translate(title: "SIGN UP", lang: "ru"), for: .normal)
+            loginButton.setTitle(Helper.translate(title: "LOG IN", lang: "ru"), for: .normal)
+            Helper.selectedLanguage = "ru"
+        }
     }
     
-    @objc func loginLabelPressed() {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
-        navigationController?.pushViewController(vc, animated: true)
-    }
-
 }
 

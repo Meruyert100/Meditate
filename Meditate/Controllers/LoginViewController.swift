@@ -10,11 +10,15 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var passwordView: UIView!
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var forgotLabel: UILabel!
     
     @IBOutlet weak var loginButton: UIButton!
     
@@ -22,6 +26,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         loadUI()
+        setLanguage()
     }
     
     private func loadUI() {
@@ -50,6 +55,39 @@ class LoginViewController: UIViewController {
     
     @IBAction func backButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    private func setLanguage() {
+        if Helper.selectedLanguage == "en" {
+            welcomeLabel.text = Helper.translate(title: "WELCOME BACK", lang: "en")
+            
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "en")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "en")
+            
+            forgotLabel.text = Helper.translate(title: "Forgot Password", lang: "en")
+            
+            loginButton.setTitle(Helper.translate(title: "LOG IN", lang: "en"), for: .normal)
+        }
+        if Helper.selectedLanguage == "kk" {
+            welcomeLabel.text = Helper.translate(title: "WELCOME BACK", lang: "kk")
+            
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "kk")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "kk")
+            
+            forgotLabel.text = Helper.translate(title: "Forgot Password", lang: "kk")
+            
+            loginButton.setTitle(Helper.translate(title: "LOG IN", lang: "kk"), for: .normal)
+        }
+        if Helper.selectedLanguage == "ru" {
+            welcomeLabel.text = Helper.translate(title: "WELCOME BACK", lang: "ru")
+            
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "ru")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "ru")
+            
+            forgotLabel.text = Helper.translate(title: "Forgot Password", lang: "ru")
+            
+            loginButton.setTitle(Helper.translate(title: "LOG IN", lang: "ru"), for: .normal)
+        }
     }
     
 }

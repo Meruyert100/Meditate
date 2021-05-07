@@ -1,0 +1,84 @@
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "7SX-aI-fp3"; */
+"7SX-aI-fp3.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "ALREADY HAVE AN ACCOUNT?"; ObjectID = "8U3-wr-9Kh"; */
+"8U3-wr-9Kh.text" = "ALREADY HAVE AN ACCOUNT?";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "8w1-Ed-Ap7"; */
+"8w1-Ed-Ap7.title" = "Home";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "A8k-0n-Rnp"; */
+"A8k-0n-Rnp.normalTitle" = "SIGN UP";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "B3D-ei-ncF"; */
+"B3D-ei-ncF.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Basics"; ObjectID = "C6U-ei-4ml"; */
+"C6U-ei-4ml.text" = "Basics";
+
+/* Class = "UILabel"; text = "Forgot Password?"; ObjectID = "GJ9-qE-PAi"; */
+"GJ9-qE-PAi.text" = "Forgot Password?";
+
+/* Class = "UILabel"; text = "3-10 min"; ObjectID = "HOP-uP-tL0"; */
+"HOP-uP-tL0.text" = "3-10 min";
+
+/* Class = "UILabel"; text = " LOG IN"; ObjectID = "HOt-dV-qmG"; */
+"HOt-dV-qmG.text" = " LOG IN";
+
+/* Class = "UILabel"; text = "3-10 min"; ObjectID = "KmI-24-zE0"; */
+"KmI-24-zE0.text" = "3-10 min";
+
+/* Class = "UIButton"; normalTitle = "LOG IN"; ObjectID = "Lem-dt-MEP"; */
+"Lem-dt-MEP.normalTitle" = "LOG IN";
+
+/* Class = "UILabel"; text = "Hi , Welcome to  M E D I T A T E"; ObjectID = "Nu8-JL-zel"; */
+"Nu8-JL-zel.text" = "Hi , Welcome to  M E D I T A T E";
+
+/* Class = "UILabel"; text = "I have read the"; ObjectID = "Osd-UN-9Ms"; */
+"Osd-UN-9Ms.text" = "I have read the";
+
+/* Class = "UILabel"; text = "COURSE"; ObjectID = "RWW-I1-IvG"; */
+"RWW-I1-IvG.text" = "COURSE";
+
+/* Class = "UILabel"; text = "Focus"; ObjectID = "SfQ-Hc-l3R"; */
+"SfQ-Hc-l3R.text" = "Focus";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "UA1-gr-Er9"; */
+"UA1-gr-Er9.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "1234567"; ObjectID = "UA1-gr-Er9"; */
+"UA1-gr-Er9.text" = "1234567";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "Vvn-85-DuL"; */
+"Vvn-85-DuL.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "Explore the app, Find some peace of mind to prepare for meditation"; ObjectID = "bCa-vY-Kfk"; */
+"bCa-vY-Kfk.text" = "Explore the app, Find some peace of mind to prepare for meditation";
+
+/* Class = "UILabel"; text = "Hi , Welcome to  M E D I T A T E"; ObjectID = "cmZ-Hu-Fiy"; */
+"cmZ-Hu-Fiy.text" = "Hi , Welcome to  M E D I T A T E";
+
+/* Class = "UIButton"; normalTitle = "GET STARTED"; ObjectID = "hTv-zl-waT"; */
+"hTv-zl-waT.normalTitle" = "GET STARTED";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "pjx-2P-Jq0"; */
+"pjx-2P-Jq0.placeholder" = "Email";
+
+/* Class = "UITextField"; text = "rufus@mail.ru"; ObjectID = "pjx-2P-Jq0"; */
+"pjx-2P-Jq0.text" = "rufus@mail.ru";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "qC3-KY-ZeF"; */
+"qC3-KY-ZeF.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "GET STARTED"; ObjectID = "vNU-bs-qAK"; */
+"vNU-bs-qAK.normalTitle" = "GET STARTED";
+
+/* Class = "UILabel"; text = "We Wish you have a good day"; ObjectID = "zK4-DL-40W"; */
+"zK4-DL-40W.text" = "We Wish you have a good day";
+
+/* Class = "UILabel"; text = "Privacy Policy"; ObjectID = "zQJ-Wg-GLJ"; */
+"zQJ-Wg-GLJ.text" = "Privacy Policy";
+
+/* Class = "UILabel"; text = "TOP Choices"; ObjectID = "zeq-PL-yeV"; */
+"zeq-PL-yeV.text" = "TOP Choices";

@@ -1,0 +1,31 @@
+/* 
+  File.strings
+  Meditate
+
+  Created by Meruyert Tastandiyeva on 5/4/21.
+  
+*/
+"Email" = "Имейл";
+"Password" = "Құпия сөз";
+"GET STARTED" = "Кеттік";
+
+"SIGN UP" = "Тіркеліңіз";
+"LOG IN" = "Логин";
+
+"CREATE YOUR ACCOUNT" = "Аккаунт aшу";
+"Name" = "Атыңыз";
+"I have read the" = "Мен оқыдым";
+"Privacy Policy" = "Құпиялылық саясатын";
+
+"WELCOME BACK" = "Қош келдіңіз!";
+"Forgot Password" = "Құпия сөзді ұмыттыңыз ба?";
+
+"HI" = "Сәлем";
+"Welcome to M E D I T A T E" = "M E D I T A T E - ке Қош келдіңіз";
+"Explore the app, Find some peace of mind to prepare for meditation" = "Қолданбаны зерттеп, медитацияға дайындалу үшін жан тыныштығын табыңыз";
+
+"We Wish you have a good day" = "Сізге жақсы күн тілейміз";
+"TOP Choices" = "Үздік таңдаулар";
+"COURSE" = "КУРС";
+"Start" = "Бастау";
+"Time" = "Уақыты: ";

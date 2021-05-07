@@ -10,6 +10,8 @@ import Firebase
 
 class SignUpViewController: UIViewController {
     
+    @IBOutlet weak var createLabel: UILabel!
+    
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var passwordView: UIView!
@@ -22,6 +24,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var rightEmailImageView: UIImageView!
     @IBOutlet weak var passwordImageView: UIImageView!
     
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var policyLabel: UILabel!
     @IBOutlet weak var policyImageView: UIImageView!
     
     @IBOutlet weak var getStartedButton: UIButton!
@@ -32,6 +36,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
         loadUI()
+        setLanguage()
         addGestureRecognizers()
         addDelegates()
     }
@@ -91,6 +96,46 @@ class SignUpViewController: UIViewController {
             } else {
                 self.createAlert(title: "Check the Policy", message: "Please...")
             }
+        }
+    }
+    
+    private func setLanguage() {
+        if Helper.selectedLanguage == "en" {
+            createLabel.text = Helper.translate(title: "CREATE YOUR ACCOUNT", lang: "en")
+            
+            nameTextField.placeholder = Helper.translate(title: "Name", lang: "en")
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "en")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "en")
+            
+            questionLabel.text = Helper.translate(title: "I have read the", lang: "en")
+            policyLabel.text = Helper.translate(title: "Privacy Policy", lang: "en")
+            
+            getStartedButton.setTitle(Helper.translate(title: "GET STARTED", lang: "en"), for: .normal)
+        }
+        if Helper.selectedLanguage == "kk" {
+            createLabel.text = Helper.translate(title: "CREATE YOUR ACCOUNT", lang: "kk")
+            
+            nameTextField.placeholder = Helper.translate(title: "Name", lang: "kk")
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "kk")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "kk")
+            
+            questionLabel.text = Helper.translate(title: "I have read the", lang: "kk")
+            policyLabel.text = Helper.translate(title: "Privacy Policy", lang: "kk")
+            
+            getStartedButton.setTitle(Helper.translate(title: "GET STARTED", lang: "kk"), for: .normal)
+        }
+        if Helper.selectedLanguage == "ru" {
+            createLabel.text = Helper.translate(title: "CREATE YOUR ACCOUNT", lang: "ru")
+            
+            nameTextField.placeholder = Helper.translate(title: "Name", lang: "ru")
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "ru")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "ru")
+            
+            questionLabel.text = Helper.translate(title: "I have read the", lang: "ru")
+            policyLabel.text = Helper.translate(title: "Privacy Policy", lang: "ru")
+            
+            getStartedButton.setTitle(Helper.translate(title: "GET STARTED", lang: "ru"), for: .normal)
+
         }
     }
     
