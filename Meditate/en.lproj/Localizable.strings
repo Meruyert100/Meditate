@@ -15,7 +15,7 @@
 "CREATE YOUR ACCOUNT" = "Create Account";
 "Name" = "Name";
 "I have read the" = "I have read the";
-"Privacy Policy" = "Privacy Policy";
+"Privacy Policy" = " Privacy Policy";
 
 "WELCOME BACK" = "Welcome Back!";
 "Forgot Password" = "Forgot Password?";
@@ -29,5 +29,15 @@
 "COURSE" = "COURSE";
 "Start" = "Start";
 "Time" = "Time: ";
+
+"Enter Email" = "Enter Email";
+"Cancel" = "Cancel";
+"Reset Password" = "Reset Password";
+"Reset Failed" = "Reset Failed";
+"Error: Something went wrong. Try again" = "Error: Something went wrong. Try again";
+"Reset email sent successfully" = "Reset email sent successfully";
+"Check your email" = "Check your email";
+
+
 
 

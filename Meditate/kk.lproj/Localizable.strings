@@ -15,7 +15,7 @@
 "CREATE YOUR ACCOUNT" = "Аккаунт aшу";
 "Name" = "Атыңыз";
 "I have read the" = "Мен оқыдым";
-"Privacy Policy" = "Құпиялылық саясатын";
+"Privacy Policy" = " Құпиялылық саясатын";
 
 "WELCOME BACK" = "Қош келдіңіз!";
 "Forgot Password" = "Құпия сөзді ұмыттыңыз ба?";
@@ -29,3 +29,11 @@
 "COURSE" = "КУРС";
 "Start" = "Бастау";
 "Time" = "Уақыты: ";
+
+"Enter Email" = "Имейлді енгізіңіз";
+"Cancel" = "Бас тарту";
+"Reset Password" = "Өзгерту";
+"Reset Failed" = "Қате";
+"Error: Something went wrong. Try again" = "Қате: Қайтадан көріңіз";
+"Reset email sent successfully" = "Электрондық пошта қалпына келтірілді";
+"Check your email" = "Электрондық поштаңызды тексеріңіз";

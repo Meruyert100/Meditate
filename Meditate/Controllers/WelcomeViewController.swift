@@ -75,6 +75,9 @@ class WelcomeViewController: UIViewController {
         
     }
     
+}
+
+extension WelcomeViewController {
     private func setLanguage() {
         if Helper.selectedLanguage == "en" {
             name1 = Helper.translate(title: "Hi", lang: "en")

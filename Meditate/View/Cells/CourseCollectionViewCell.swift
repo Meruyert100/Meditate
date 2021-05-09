@@ -36,7 +36,10 @@ class CourseCollectionViewCell: UICollectionViewCell {
     @IBAction func startButtonPressed(_ sender: Any) {
         
     }
-    
+
+}
+
+extension CourseCollectionViewCell {
     private func setLanguage() {
         if Helper.selectedLanguage == "en" {
             typeLabel?.text = Helper.translate(title: "COURSE", lang: "en")
@@ -54,7 +57,5 @@ class CourseCollectionViewCell: UICollectionViewCell {
             startButton?.setTitle(Helper.translate(title: "Start", lang: "ru"), for: .normal)
         }
     }
-    
 }
-
 

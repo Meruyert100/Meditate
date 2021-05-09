@@ -15,7 +15,7 @@
 "CREATE YOUR ACCOUNT" = "Создайте Аккаунт";
 "Name" = "Имя";
 "I have read the" = "Я прочитал(-a)";
-"Privacy Policy" = "Политику о Безопастности";
+"Privacy Policy" = " Политику о Безопастности";
 
 "WELCOME BACK" = "Добро Пожаловать!";
 "Forgot Password" = "Забыли пароль?";
@@ -29,3 +29,11 @@
 "COURSE" = "КУРС";
 "Start" = "Начать";
 "Time" = "Время: ";
+
+"Enter Email" = "Введите Имейл";
+"Cancel" = "Отменить";
+"Reset Password" = "Изменить";
+"Reset Failed" = "Возникла проблема";
+"Error: Something went wrong. Try again" = "Ошибка: Попробуйте заново";
+"Reset email sent successfully" = "Все успешно прошло";
+"Check your email" = "Проверьте почту";

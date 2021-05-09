@@ -145,6 +145,9 @@ class HomeViewController: UIViewController {
         
     }
     
+}
+
+extension HomeViewController {
     private func setLanguage() {
         if Helper.selectedLanguage == "en" {
             name1 = Helper.translate(title: "Hi", lang: "en")
@@ -171,7 +174,6 @@ class HomeViewController: UIViewController {
             topLabel?.text = Helper.translate(title: "TOP Choices", lang: "ru")
         }
     }
-    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
