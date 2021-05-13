@@ -10,6 +10,8 @@ import Firebase
 
 class SignUpViewController: UIViewController {
     
+    @IBOutlet weak var createLabel: UILabel!
+    
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var passwordView: UIView!
@@ -22,6 +24,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var rightEmailImageView: UIImageView!
     @IBOutlet weak var passwordImageView: UIImageView!
     
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var policyLabel: UILabel!
     @IBOutlet weak var policyImageView: UIImageView!
     
     @IBOutlet weak var getStartedButton: UIButton!
@@ -32,6 +36,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
         loadUI()
+        setLanguage()
         addGestureRecognizers()
         addDelegates()
     }
@@ -59,6 +64,10 @@ class SignUpViewController: UIViewController {
         let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(passwordRevealed))
         passwordImageView.isUserInteractionEnabled = true
         passwordImageView.addGestureRecognizer(tapGesture2)
+        
+        let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(showPolicy))
+        policyLabel.isUserInteractionEnabled = true
+        policyLabel.addGestureRecognizer(tapGesture3)
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
@@ -72,9 +81,11 @@ class SignUpViewController: UIViewController {
                 Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     if let e = error {
                         print(e)
-                        let alert = UIAlertController(title: "Invalid Credentials", message: "Please check again", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        self.present(alert, animated: true, completion: nil)
+                        if password.count < 6 {
+                            self.createAlert(title: "Password must be more than 6 symbols long", message: "Please check again")
+                        } else {
+                            self.createAlert(title: "Wrong email format", message: "Please check again")
+                        }
                     } else {
                         
                         if let uid = Auth.auth().currentUser?.uid {
@@ -91,13 +102,53 @@ class SignUpViewController: UIViewController {
                     }
                 }
             } else {
-                let alert = UIAlertController(title: "Check the Policy", message: "Please...", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+                self.createAlert(title: "Check the Policy", message: "Please...")
             }
         }
     }
-    
+        
+}
+
+extension SignUpViewController {
+    private func setLanguage() {
+        if Helper.selectedLanguage == "en" {
+            createLabel.text = Helper.translate(title: "CREATE YOUR ACCOUNT", lang: "en")
+            
+            nameTextField.placeholder = Helper.translate(title: "Name", lang: "en")
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "en")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "en")
+            
+            questionLabel.text = Helper.translate(title: "I have read the", lang: "en")
+            policyLabel.text = Helper.translate(title: "Privacy Policy", lang: "en")
+            
+            getStartedButton.setTitle(Helper.translate(title: "GET STARTED", lang: "en"), for: .normal)
+        }
+        if Helper.selectedLanguage == "kk" {
+            createLabel.text = Helper.translate(title: "CREATE YOUR ACCOUNT", lang: "kk")
+            
+            nameTextField.placeholder = Helper.translate(title: "Name", lang: "kk")
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "kk")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "kk")
+            
+            questionLabel.text = Helper.translate(title: "I have read the", lang: "kk")
+            policyLabel.text = Helper.translate(title: "Privacy Policy", lang: "kk")
+            
+            getStartedButton.setTitle(Helper.translate(title: "GET STARTED", lang: "kk"), for: .normal)
+        }
+        if Helper.selectedLanguage == "ru" {
+            createLabel.text = Helper.translate(title: "CREATE YOUR ACCOUNT", lang: "ru")
+            
+            nameTextField.placeholder = Helper.translate(title: "Name", lang: "ru")
+            emailTextField.placeholder = Helper.translate(title: "Email", lang: "ru")
+            passwordTextField.placeholder = Helper.translate(title: "Password", lang: "ru")
+            
+            questionLabel.text = Helper.translate(title: "I have read the", lang: "ru")
+            policyLabel.text = Helper.translate(title: "Privacy Policy", lang: "ru")
+            
+            getStartedButton.setTitle(Helper.translate(title: "GET STARTED", lang: "ru"), for: .normal)
+
+        }
+    }
 }
 
 extension SignUpViewController {
@@ -120,19 +171,38 @@ extension SignUpViewController {
             passwordTextField.isSecureTextEntry = false
         }
     }
+    
+    private func createAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func showPolicy() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "policyVC")
+        as! PrivacyViewController
+        self.present(vc, animated: true, completion: nil)
+    }
 
 }
 
 extension SignUpViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if !nameTextField.text!.isEmpty || !emailTextField.text!.isEmpty {
+        if !nameTextField.text!.isEmpty {
             rightNameImageView.image = UIImage(named: "right")
         } else {
             rightNameImageView.image = nil
         }
         
         if !emailTextField.text!.isEmpty {
-            rightEmailImageView.image = UIImage(named: "right")
+            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+            if emailPred.evaluate(with: emailTextField.text) {
+                rightEmailImageView.image = UIImage(named: "right")
+            } else {
+                rightEmailImageView.image = UIImage(named: "openEye")
+            }
         } else {
             rightEmailImageView.image = nil
         }

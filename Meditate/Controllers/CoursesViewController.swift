@@ -81,9 +81,9 @@ class CoursesViewController: UIViewController, TabItem {
                         let banner = course["banner"] as! String
                         self.courses.append(Course(name: name, duration: duration, image: image, description: description, banner: banner))
                         self.collectionView?.reloadData()
-                        self.stopLoading()
                     }
                 }
+                self.stopLoading()
             }) { (error) in
                 print(error.localizedDescription)
             }

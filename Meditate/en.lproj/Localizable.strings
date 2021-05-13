@@ -1,0 +1,43 @@
+/* 
+  File.strings
+  Meditate
+
+  Created by Meruyert Tastandiyeva on 5/4/21.
+  
+*/
+"Email" = "Email";
+"Password" = "Password";
+"GET STARTED" = "GET STARTED";
+
+"SIGN UP" = "SIGN UP";
+"LOG IN" = "LOG IN";
+
+"CREATE YOUR ACCOUNT" = "Create Account";
+"Name" = "Name";
+"I have read the" = "I have read the";
+"Privacy Policy" = " Privacy Policy";
+
+"WELCOME BACK" = "Welcome Back!";
+"Forgot Password" = "Forgot Password?";
+
+"Hi" = "Hi";
+"Welcome to M E D I T A T E" = "Welcome to M E D I T A T E";
+"Explore the app, Find some peace of mind to prepare for meditation" = "Explore the app, Find some peace of mind to prepare for meditation";
+
+"We Wish you have a good day" = "We Wish you have a good day";
+"TOP Choices" = "TOP Choices";
+"COURSE" = "COURSE";
+"Start" = "Start";
+"Time" = "Time: ";
+
+"Enter Email" = "Enter Email";
+"Cancel" = "Cancel";
+"Reset Password" = "Reset Password";
+"Reset Failed" = "Reset Failed";
+"Error: Something went wrong. Try again" = "Error: Something went wrong. Try again";
+"Reset email sent successfully" = "Reset email sent successfully";
+"Check your email" = "Check your email";
+
+
+
+

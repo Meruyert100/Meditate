@@ -11,6 +11,7 @@ import AMTabView
 
 class ChatViewController: UIViewController, TabItem {
     
+    @IBOutlet weak var emptyView: UIView!
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     var messages = [Message]()
@@ -58,9 +59,9 @@ class ChatViewController: UIViewController, TabItem {
                         self.messages.append(Message(sender: sender, text: text))
  
                         self.tableView?.reloadData()
-                        self.stopLoading()
                     }
                 }
+                self.stopLoading()
             }) { (error) in
                 print(error.localizedDescription)
             }
@@ -76,6 +77,8 @@ class ChatViewController: UIViewController, TabItem {
         ]
         Database.database().reference().child("messages").child(Auth.auth().currentUser!.uid).child(id).setValue(regObject)
         
+        emptyView.isHidden = true
+        tableView.isHidden = false
         messageTextField.text = ""
     }
     
@@ -85,6 +88,13 @@ class ChatViewController: UIViewController, TabItem {
 
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if messages.count == 0 {
+            emptyView.isHidden = false
+            tableView.isHidden = true
+            return 0
+        }
+        tableView.isHidden = false
+        emptyView.isHidden = true
         return messages.count
     }
     
