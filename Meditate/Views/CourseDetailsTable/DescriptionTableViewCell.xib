@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="KGk-i7-Jjw" customClass="DescriptionTableViewCell" customModule="Meditate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrV-Wa-g4C">
+                        <rect key="frame" x="16" y="9" width="288" height="37"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeS-sx-BPv">
+                        <rect key="frame" x="16" y="54" width="78" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ease the mind into a restful night’s sleep with these deep, amblent tones." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5P-Bh-FBe">
+                        <rect key="frame" x="16" y="84" width="288" height="49"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HeS-sx-BPv" firstAttribute="top" secondItem="LrV-Wa-g4C" secondAttribute="bottom" constant="8" symbolic="YES" id="52X-G8-k2F"/>
+                    <constraint firstItem="Q5P-Bh-FBe" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="5cH-pe-HCL"/>
+                    <constraint firstItem="HeS-sx-BPv" firstAttribute="top" secondItem="LrV-Wa-g4C" secondAttribute="bottom" constant="8" symbolic="YES" id="8Z9-RZ-mJE"/>
+                    <constraint firstAttribute="trailing" secondItem="HeS-sx-BPv" secondAttribute="trailing" constant="226" id="Bx9-n1-unz"/>
+                    <constraint firstItem="Q5P-Bh-FBe" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="G6w-CV-Xrv"/>
+                    <constraint firstItem="Q5P-Bh-FBe" firstAttribute="top" secondItem="HeS-sx-BPv" secondAttribute="bottom" constant="9" id="Jtq-MH-JWx"/>
+                    <constraint firstItem="HeS-sx-BPv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Xau-YQ-jze"/>
+                    <constraint firstItem="LrV-Wa-g4C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="ii4-9N-tf1"/>
+                    <constraint firstAttribute="trailing" secondItem="LrV-Wa-g4C" secondAttribute="trailing" constant="16" id="mGM-8e-eEK"/>
+                    <constraint firstItem="Q5P-Bh-FBe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="mIO-7J-WNc"/>
+                    <constraint firstItem="LrV-Wa-g4C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nmn-9f-YUr"/>
+                    <constraint firstItem="Q5P-Bh-FBe" firstAttribute="top" secondItem="HeS-sx-BPv" secondAttribute="bottom" constant="9" id="tlI-25-fU7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Q5P-Bh-FBe" id="7Ox-da-XGr"/>
+                <outlet property="namelabel" destination="LrV-Wa-g4C" id="04O-zR-eMM"/>
+            </connections>
+            <point key="canvasLocation" x="-65.217391304347828" y="89.0625"/>
+        </tableViewCell>
+    </objects>
+</document>

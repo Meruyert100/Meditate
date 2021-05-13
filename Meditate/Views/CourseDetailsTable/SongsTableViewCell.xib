@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="47" id="KGk-i7-Jjw" customClass="SongsTableViewCell" customModule="Meditate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCs-RZ-JCq">
+                        <rect key="frame" x="16" y="5.5" width="35" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="0ut-xs-zFX"/>
+                            <constraint firstAttribute="height" constant="35" id="LTs-cZ-KeM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                        <state key="normal" backgroundImage="play.circle" catalog="system">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus Attension" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6m-my-EMP">
+                        <rect key="frame" x="59" y="5" width="122.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qN-pO-N7L">
+                        <rect key="frame" x="59" y="25" width="30" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="D6m-my-EMP" firstAttribute="leading" secondItem="XCs-RZ-JCq" secondAttribute="trailing" constant="8" symbolic="YES" id="239-ab-HF0"/>
+                    <constraint firstAttribute="bottom" secondItem="5qN-pO-N7L" secondAttribute="bottom" constant="7" id="5K6-1Q-fQr"/>
+                    <constraint firstAttribute="trailing" secondItem="5qN-pO-N7L" secondAttribute="trailing" constant="231" id="6TM-EO-VMT"/>
+                    <constraint firstItem="5qN-pO-N7L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="9cr-5l-AiP"/>
+                    <constraint firstAttribute="bottom" secondItem="D6m-my-EMP" secondAttribute="bottom" constant="21" id="AG4-wY-XD9"/>
+                    <constraint firstItem="XCs-RZ-JCq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="a4H-rw-JQ8"/>
+                    <constraint firstAttribute="trailing" secondItem="D6m-my-EMP" secondAttribute="trailing" constant="138.5" id="bWK-2c-Ux9"/>
+                    <constraint firstAttribute="bottom" secondItem="XCs-RZ-JCq" secondAttribute="bottom" constant="7" id="nI6-sa-ozw"/>
+                    <constraint firstItem="D6m-my-EMP" firstAttribute="leading" secondItem="XCs-RZ-JCq" secondAttribute="trailing" constant="8" symbolic="YES" id="r00-fs-2gm"/>
+                    <constraint firstItem="D6m-my-EMP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="rYS-VW-LWI"/>
+                    <constraint firstItem="5qN-pO-N7L" firstAttribute="leading" secondItem="XCs-RZ-JCq" secondAttribute="trailing" constant="8" symbolic="YES" id="v7C-ng-wfg"/>
+                    <constraint firstItem="XCs-RZ-JCq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="vUY-Hr-42T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="D6m-my-EMP" id="z4z-YI-kft"/>
+                <outlet property="timeLabel" destination="5qN-pO-N7L" id="ST5-ZH-1AU"/>
+            </connections>
+            <point key="canvasLocation" x="-65.217391304347828" y="56.584821428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -47,6 +47,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func getStartedButtonPressed(_ sender: Any) {
-        print("start")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

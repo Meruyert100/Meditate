@@ -13,10 +13,38 @@
 		13A6A4FF262AF6590091E606 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6A4FE262AF6590091E606 /* StartViewController.swift */; };
 		13A6A502262AF6590091E606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A6A500262AF6590091E606 /* Main.storyboard */; };
 		13A6A507262AF65C0091E606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A6A505262AF65C0091E606 /* LaunchScreen.storyboard */; };
-		13A9F62B263097EA003F9DF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13A9F62A263097EA003F9DF0 /* GoogleService-Info.plist */; };
 		13D9EB0B262F48DD000CA2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D9EB0A262F48DD000CA2CC /* Assets.xcassets */; };
 		13D9EB0E262F5450000CA2CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9EB0D262F5450000CA2CC /* LoginViewController.swift */; };
 		13D9EB11262F545B000CA2CC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9EB10262F545B000CA2CC /* SignUpViewController.swift */; };
+		3633CC552647F90800E0AE5F /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633CC542647F90800E0AE5F /* Choice.swift */; };
+		3633CC572647FC8F00E0AE5F /* ChoiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633CC562647FC8F00E0AE5F /* ChoiceCollectionViewCell.swift */; };
+		3633CC592649320100E0AE5F /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633CC582649320100E0AE5F /* StoryViewController.swift */; };
+		368039662642BE0C00BA6B14 /* MeditateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368039642642BE0C00BA6B14 /* MeditateCollectionViewCell.swift */; };
+		3680396C2642BE3500BA6B14 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3680396A2642BE3500BA6B14 /* StoriesCollectionViewCell.swift */; };
+		3680396F2642BFB200BA6B14 /* MeditateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3680396E2642BFB200BA6B14 /* MeditateViewController.swift */; };
+		368039712642C10D00BA6B14 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368039702642C10D00BA6B14 /* Meditation.swift */; };
+		3680397326433EC300BA6B14 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3680397226433EC300BA6B14 /* Story.swift */; };
+		368039B626456B6100BA6B14 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368039B526456B6100BA6B14 /* ProfileViewController.swift */; };
+		368039C02645CCEA00BA6B14 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368039BF2645CCEA00BA6B14 /* CourseDetailsViewController.swift */; };
+		368039C42645CF1900BA6B14 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368039C22645CF1900BA6B14 /* ImageTableViewCell.swift */; };
+		368039C52645CF1900BA6B14 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368039C32645CF1900BA6B14 /* ImageTableViewCell.xib */; };
+		368039CA2645D19000BA6B14 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368039C82645D19000BA6B14 /* DescriptionTableViewCell.swift */; };
+		368039CB2645D19000BA6B14 /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368039C92645D19000BA6B14 /* DescriptionTableViewCell.xib */; };
+		368039D02645D2D600BA6B14 /* SongsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368039CE2645D2D600BA6B14 /* SongsTableViewCell.swift */; };
+		368039D12645D2D600BA6B14 /* SongsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368039CF2645D2D600BA6B14 /* SongsTableViewCell.xib */; };
+		368894362638186700BAFF05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 368894352638186700BAFF05 /* GoogleService-Info.plist */; };
+		3688943826381E6F00BAFF05 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688943726381E6F00BAFF05 /* CoursesViewController.swift */; };
+		3688943A26381FB900BAFF05 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688943926381FB900BAFF05 /* ChatViewController.swift */; };
+		3688943C2638204500BAFF05 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688943B2638204500BAFF05 /* TabBarViewController.swift */; };
+		36889441263822C600BAFF05 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688943F263822C600BAFF05 /* CourseCollectionViewCell.swift */; };
+		36889442263822C600BAFF05 /* CourseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36889440263822C600BAFF05 /* CourseCollectionViewCell.xib */; };
+		368894442638268200BAFF05 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368894432638268200BAFF05 /* Course.swift */; };
+		3688944626383DF600BAFF05 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688944526383DF500BAFF05 /* Message.swift */; };
+		3688944B26383E3900BAFF05 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688944926383E3900BAFF05 /* MessageTableViewCell.swift */; };
+		3688944C26383E3900BAFF05 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3688944A26383E3900BAFF05 /* MessageTableViewCell.xib */; };
+		36EDACD3264A889100AC7B53 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDACD2264A889100AC7B53 /* Songs.swift */; };
+		36EDACD5264AA01F00AC7B53 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDACD4264AA01F00AC7B53 /* MusicViewController.swift */; };
+		36EDB00D264D340C00AC7B53 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EDB00C264D340C00AC7B53 /* MenuViewController.swift */; };
 		8E840445A29438446D8B196E /* Pods_Meditate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB106058ED5C623F787F8F43 /* Pods_Meditate.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +57,38 @@
 		13A6A501262AF6590091E606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13A6A506262AF65C0091E606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13A6A508262AF65C0091E606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13A9F62A263097EA003F9DF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13D9EB0A262F48DD000CA2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13D9EB0D262F5450000CA2CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		13D9EB10262F545B000CA2CC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3633CC542647F90800E0AE5F /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Choice.swift; path = Meditate/Views/ChoiceCollection/Choice.swift; sourceTree = SOURCE_ROOT; };
+		3633CC562647FC8F00E0AE5F /* ChoiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		3633CC582649320100E0AE5F /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		368039642642BE0C00BA6B14 /* MeditateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditateCollectionViewCell.swift; sourceTree = "<group>"; };
+		3680396A2642BE3500BA6B14 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		3680396E2642BFB200BA6B14 /* MeditateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditateViewController.swift; sourceTree = "<group>"; };
+		368039702642C10D00BA6B14 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meditation.swift; path = Meditate/Controllers/Meditation.swift; sourceTree = SOURCE_ROOT; };
+		3680397226433EC300BA6B14 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Story.swift; path = Meditate/Controllers/Story.swift; sourceTree = SOURCE_ROOT; };
+		368039B526456B6100BA6B14 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		368039BF2645CCEA00BA6B14 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
+		368039C22645CF1900BA6B14 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		368039C32645CF1900BA6B14 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		368039C82645D19000BA6B14 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		368039C92645D19000BA6B14 /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		368039CE2645D2D600BA6B14 /* SongsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsTableViewCell.swift; sourceTree = "<group>"; };
+		368039CF2645D2D600BA6B14 /* SongsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongsTableViewCell.xib; sourceTree = "<group>"; };
+		368894352638186700BAFF05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3688943726381E6F00BAFF05 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		3688943926381FB900BAFF05 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		3688943B2638204500BAFF05 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3688943F263822C600BAFF05 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
+		36889440263822C600BAFF05 /* CourseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCollectionViewCell.xib; sourceTree = "<group>"; };
+		368894432638268200BAFF05 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Course.swift; path = Meditate/Views/Course.swift; sourceTree = SOURCE_ROOT; };
+		3688944526383DF500BAFF05 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Meditate/Views/Message.swift; sourceTree = SOURCE_ROOT; };
+		3688944926383E3900BAFF05 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		3688944A26383E3900BAFF05 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		36EDACD2264A889100AC7B53 /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Songs.swift; path = Meditate/Controllers/Songs.swift; sourceTree = SOURCE_ROOT; };
+		36EDACD4264AA01F00AC7B53 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		36EDB00C264D340C00AC7B53 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		6A20DC19FAC14EFB90FF7ECD /* Pods-Meditate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditate.debug.xcconfig"; path = "Target Support Files/Pods-Meditate/Pods-Meditate.debug.xcconfig"; sourceTree = "<group>"; };
 		A8675547C0BCDE9EE7AC33EA /* Pods-Meditate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditate.release.xcconfig"; path = "Target Support Files/Pods-Meditate/Pods-Meditate.release.xcconfig"; sourceTree = "<group>"; };
 		DB106058ED5C623F787F8F43 /* Pods_Meditate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +113,15 @@
 				13D9EB10262F545B000CA2CC /* SignUpViewController.swift */,
 				13D9EB0D262F5450000CA2CC /* LoginViewController.swift */,
 				132A50FA26315D68004FD21F /* WelcomeViewController.swift */,
+				3688943B2638204500BAFF05 /* TabBarViewController.swift */,
+				36EDB00C264D340C00AC7B53 /* MenuViewController.swift */,
+				3688943726381E6F00BAFF05 /* CoursesViewController.swift */,
+				3688943926381FB900BAFF05 /* ChatViewController.swift */,
+				3680396E2642BFB200BA6B14 /* MeditateViewController.swift */,
+				368039B526456B6100BA6B14 /* ProfileViewController.swift */,
+				368039BF2645CCEA00BA6B14 /* CourseDetailsViewController.swift */,
+				36EDACD4264AA01F00AC7B53 /* MusicViewController.swift */,
+				3633CC582649320100E0AE5F /* StoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -72,25 +137,28 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		132A510026315FC6004FD21F /* View */ = {
+		132A510026315FC6004FD21F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				132A510126315FCC004FD21F /* Stroyboards */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		132A510126315FCC004FD21F /* Stroyboards */ = {
-			isa = PBXGroup;
-			children = (
+				3633CC512647F80D00E0AE5F /* ChoiceCollection */,
+				368039C12645CD4400BA6B14 /* CourseDetailsTable */,
+				368039632642BDDE00BA6B14 /* MeditateCollection */,
+				3688944826383E1D00BAFF05 /* MessageTable */,
+				3688944726383E0E00BAFF05 /* CourseCollection */,
 				13A6A500262AF6590091E606 /* Main.storyboard */,
 			);
-			path = Stroyboards;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		132A510226315FE2004FD21F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				368894432638268200BAFF05 /* Course.swift */,
+				3688944526383DF500BAFF05 /* Message.swift */,
+				368039702642C10D00BA6B14 /* Meditation.swift */,
+				3680397226433EC300BA6B14 /* Story.swift */,
+				3633CC542647F90800E0AE5F /* Choice.swift */,
+				36EDACD2264A889100AC7B53 /* Songs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,14 +184,62 @@
 		13A6A4F9262AF6590091E606 /* Meditate */ = {
 			isa = PBXGroup;
 			children = (
-				132A510226315FE2004FD21F /* Models */,
-				132A510026315FC6004FD21F /* View */,
 				132A50FF26315FA7004FD21F /* Supporting Files */,
+				132A510226315FE2004FD21F /* Models */,
+				132A510026315FC6004FD21F /* Views */,
 				132A50FE26315F91004FD21F /* Controllers */,
 				13A6A508262AF65C0091E606 /* Info.plist */,
-				13A9F62A263097EA003F9DF0 /* GoogleService-Info.plist */,
+				368894352638186700BAFF05 /* GoogleService-Info.plist */,
 			);
 			path = Meditate;
+			sourceTree = "<group>";
+		};
+		3633CC512647F80D00E0AE5F /* ChoiceCollection */ = {
+			isa = PBXGroup;
+			children = (
+				3633CC562647FC8F00E0AE5F /* ChoiceCollectionViewCell.swift */,
+			);
+			path = ChoiceCollection;
+			sourceTree = "<group>";
+		};
+		368039632642BDDE00BA6B14 /* MeditateCollection */ = {
+			isa = PBXGroup;
+			children = (
+				368039642642BE0C00BA6B14 /* MeditateCollectionViewCell.swift */,
+				3680396A2642BE3500BA6B14 /* StoriesCollectionViewCell.swift */,
+			);
+			path = MeditateCollection;
+			sourceTree = "<group>";
+		};
+		368039C12645CD4400BA6B14 /* CourseDetailsTable */ = {
+			isa = PBXGroup;
+			children = (
+				368039C22645CF1900BA6B14 /* ImageTableViewCell.swift */,
+				368039C32645CF1900BA6B14 /* ImageTableViewCell.xib */,
+				368039C82645D19000BA6B14 /* DescriptionTableViewCell.swift */,
+				368039C92645D19000BA6B14 /* DescriptionTableViewCell.xib */,
+				368039CE2645D2D600BA6B14 /* SongsTableViewCell.swift */,
+				368039CF2645D2D600BA6B14 /* SongsTableViewCell.xib */,
+			);
+			path = CourseDetailsTable;
+			sourceTree = "<group>";
+		};
+		3688944726383E0E00BAFF05 /* CourseCollection */ = {
+			isa = PBXGroup;
+			children = (
+				3688943F263822C600BAFF05 /* CourseCollectionViewCell.swift */,
+				36889440263822C600BAFF05 /* CourseCollectionViewCell.xib */,
+			);
+			path = CourseCollection;
+			sourceTree = "<group>";
+		};
+		3688944826383E1D00BAFF05 /* MessageTable */ = {
+			isa = PBXGroup;
+			children = (
+				3688944926383E3900BAFF05 /* MessageTableViewCell.swift */,
+				3688944A26383E3900BAFF05 /* MessageTableViewCell.xib */,
+			);
+			path = MessageTable;
 			sourceTree = "<group>";
 		};
 		DD64F40CDA6FB197876ED090 /* Frameworks */ = {
@@ -202,10 +318,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368039C52645CF1900BA6B14 /* ImageTableViewCell.xib in Resources */,
+				368039D12645D2D600BA6B14 /* SongsTableViewCell.xib in Resources */,
 				13A6A507262AF65C0091E606 /* LaunchScreen.storyboard in Resources */,
+				3688944C26383E3900BAFF05 /* MessageTableViewCell.xib in Resources */,
+				368894362638186700BAFF05 /* GoogleService-Info.plist in Resources */,
+				368039CB2645D19000BA6B14 /* DescriptionTableViewCell.xib in Resources */,
 				13D9EB0B262F48DD000CA2CC /* Assets.xcassets in Resources */,
 				13A6A502262AF6590091E606 /* Main.storyboard in Resources */,
-				13A9F62B263097EA003F9DF0 /* GoogleService-Info.plist in Resources */,
+				36889442263822C600BAFF05 /* CourseCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,11 +379,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368039C42645CF1900BA6B14 /* ImageTableViewCell.swift in Sources */,
+				368039662642BE0C00BA6B14 /* MeditateCollectionViewCell.swift in Sources */,
+				368039CA2645D19000BA6B14 /* DescriptionTableViewCell.swift in Sources */,
 				13D9EB0E262F5450000CA2CC /* LoginViewController.swift in Sources */,
+				368039C02645CCEA00BA6B14 /* CourseDetailsViewController.swift in Sources */,
+				3633CC572647FC8F00E0AE5F /* ChoiceCollectionViewCell.swift in Sources */,
+				368894442638268200BAFF05 /* Course.swift in Sources */,
+				3633CC552647F90800E0AE5F /* Choice.swift in Sources */,
+				36EDACD5264AA01F00AC7B53 /* MusicViewController.swift in Sources */,
+				36EDB00D264D340C00AC7B53 /* MenuViewController.swift in Sources */,
+				3680396F2642BFB200BA6B14 /* MeditateViewController.swift in Sources */,
+				3680396C2642BE3500BA6B14 /* StoriesCollectionViewCell.swift in Sources */,
 				13A6A4FF262AF6590091E606 /* StartViewController.swift in Sources */,
+				3688943A26381FB900BAFF05 /* ChatViewController.swift in Sources */,
+				36889441263822C600BAFF05 /* CourseCollectionViewCell.swift in Sources */,
 				13A6A4FB262AF6590091E606 /* AppDelegate.swift in Sources */,
+				368039B626456B6100BA6B14 /* ProfileViewController.swift in Sources */,
+				3680397326433EC300BA6B14 /* Story.swift in Sources */,
+				3688943C2638204500BAFF05 /* TabBarViewController.swift in Sources */,
+				3688944B26383E3900BAFF05 /* MessageTableViewCell.swift in Sources */,
 				132A50FB26315D68004FD21F /* WelcomeViewController.swift in Sources */,
+				368039D02645D2D600BA6B14 /* SongsTableViewCell.swift in Sources */,
+				3633CC592649320100E0AE5F /* StoryViewController.swift in Sources */,
 				13A6A4FD262AF6590091E606 /* SceneDelegate.swift in Sources */,
+				3688944626383DF600BAFF05 /* Message.swift in Sources */,
+				36EDACD3264A889100AC7B53 /* Songs.swift in Sources */,
+				368039712642C10D00BA6B14 /* Meditation.swift in Sources */,
+				3688943826381E6F00BAFF05 /* CoursesViewController.swift in Sources */,
 				13D9EB11262F545B000CA2CC /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX65PMA448;
 				INFOPLIST_FILE = Meditate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,6 +576,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX65PMA448;
 				INFOPLIST_FILE = Meditate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,4 +1,6 @@
 PODS:
+  - AMTabView (0.1.2)
+  - ANActivityIndicator (1.2.0)
   - Firebase/Auth (6.34.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.9.2)
@@ -51,11 +53,15 @@ PODS:
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
+  - AMTabView
+  - ANActivityIndicator
   - Firebase/Auth
   - Firebase/Database
 
 SPEC REPOS:
   trunk:
+    - AMTabView
+    - ANActivityIndicator
     - Firebase
     - FirebaseAuth
     - FirebaseCore
@@ -69,6 +75,8 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  AMTabView: b8a74f5ea27ec367d8f6fa614ebc77be9af38064
+  ANActivityIndicator: 44a996931d0c554cf157b31056603b23bbdbe76a
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
   FirebaseAuth: c92d49ada7948d1a23466e3db17bc4c2039dddc3
   FirebaseCore: d3a978a3cfa3240bf7e4ba7d137fdf5b22b628ec
@@ -81,6 +89,6 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: d2409cc907c5c328013606a061652fe532e09962
+PODFILE CHECKSUM: 7a712fed91e68d37f3e73ab61f2593e8f6e956d8
 
 COCOAPODS: 1.10.1
