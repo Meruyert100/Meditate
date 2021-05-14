@@ -2,13 +2,16 @@
 //  Course.swift
 //  Meditate
 //
-//  Created by Meruyert Tastandiyeva on 4/23/21.
+//  Created by Dina Yestemir on 27.04.2021.
 //
 
+import Foundation
 import UIKit
 
 struct Course {
-    var imageLink: String?
-    var name: String?
-    var time: String?
+    let name: String
+    let duration: String
+    let image: String
+    let description: String
+    let banner: String
 }

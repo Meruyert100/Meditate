@@ -2,13 +2,11 @@
 //  Choice.swift
 //  Meditate
 //
-//  Created by Meruyert Tastandiyeva on 4/23/21.
+//  Created by Dina Yestemir on 09.05.2021.
 //
 
-import UIKit
-
+import Foundation
 struct Choice {
-    var imageLink: String?
-    var name: String?
-    var time: String?
+    let image: String
+    let name: String
 }
