@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import ANActivityIndicator
 
 class WelcomeViewController: UIViewController {
     
@@ -31,7 +32,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showActivityIndicatory()
+        showIndicator(animationType: .ballTrianglePath, color: #colorLiteral(red: 0.5509303212, green: 0.5867726803, blue: 1, alpha: 1))
         setLanguage()
         loadUI()
     }
@@ -42,13 +43,6 @@ class WelcomeViewController: UIViewController {
         getStartedButton.layer.cornerRadius = 30
         
         nameLabel.isHidden = true
-    }
-    
-    private func showActivityIndicatory() {
-        activityView = UIActivityIndicatorView(style: .whiteLarge)
-        activityView?.center = self.view.center
-        self.view.addSubview(activityView!)
-        activityView?.startAnimating()
     }
     
     private func loadUserName() {
@@ -62,6 +56,7 @@ class WelcomeViewController: UIViewController {
                 self.nameLabel.text = "\(self.name1) \(self.name), \(self.name2)"
                 self.activityView?.stopAnimating()
                 self.nameLabel.isHidden = false
+                self.hideIndicator()
             }) { (error) in
                 print(error.localizedDescription)
             }
