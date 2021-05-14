@@ -83,9 +83,9 @@ class MeditateViewController: UIViewController, TabItem {
                         self.meditations.append(Meditation(name: name, image: image, music: music))
                         
                         self.collectionView?.reloadData()
-                        self.stopLoading()
                     }
                 }
+                self.stopLoading()
             }) { (error) in
                 print(error.localizedDescription)
             }

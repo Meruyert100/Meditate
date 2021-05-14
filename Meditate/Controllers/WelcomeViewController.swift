@@ -15,8 +15,6 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var getStartedButton: UIButton!
     
-    var activityView: UIActivityIndicatorView?
-    
     var name = ""
     
     var name1 = ""
@@ -31,7 +29,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showActivityIndicatory()
+        startLoading()
         setLanguage()
         loadUI()
     }
@@ -44,11 +42,12 @@ class WelcomeViewController: UIViewController {
         nameLabel.isHidden = true
     }
     
-    private func showActivityIndicatory() {
-        activityView = UIActivityIndicatorView(style: .whiteLarge)
-        activityView?.center = self.view.center
-        self.view.addSubview(activityView!)
-        activityView?.startAnimating()
+    private func startLoading() {
+        showIndicator(animationType: .ballTrianglePath, color: #colorLiteral(red: 0.5509303212, green: 0.5867726803, blue: 1, alpha: 1))
+    }
+    
+    private func stopLoading() {
+        hideIndicator()
     }
     
     private func loadUserName() {
@@ -60,7 +59,7 @@ class WelcomeViewController: UIViewController {
                 let value = snapshot.value as? NSDictionary
                 self.name = value?["username"] as? String ?? ""
                 self.nameLabel.text = "\(self.name1) \(self.name), \(self.name2)"
-                self.activityView?.stopAnimating()
+                self.stopLoading()
                 self.nameLabel.isHidden = false
             }) { (error) in
                 print(error.localizedDescription)
@@ -72,7 +71,8 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func getStartedButtonPressed(_ sender: Any) {
-        
+        let vc = storyboard!.instantiateViewController(identifier: "MenuViewController") as! MenuViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

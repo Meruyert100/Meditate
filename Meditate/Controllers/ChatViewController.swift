@@ -58,9 +58,9 @@ class ChatViewController: UIViewController, TabItem {
                         self.messages.append(Message(sender: sender, text: text))
  
                         self.tableView?.reloadData()
-                        self.stopLoading()
                     }
                 }
+                self.stopLoading()
             }) { (error) in
                 print(error.localizedDescription)
             }
