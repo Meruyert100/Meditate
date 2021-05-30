@@ -7,6 +7,7 @@
 
 import UIKit
 import AMTabView
+import Firebase
 
 class ProfileViewController: UIViewController, TabItem {
 
@@ -32,6 +33,17 @@ class ProfileViewController: UIViewController, TabItem {
         
         profileImageView.layer.cornerRadius = 75
     }
+    
+    @IBAction func logoutButtonPressed(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToViewController((self.navigationController?.viewControllers[0])!, animated: true)
+        } catch {
+            print(error)
+        }
+        
+    }
+    
 }
 
 //MARK: - CollectionView Delegate

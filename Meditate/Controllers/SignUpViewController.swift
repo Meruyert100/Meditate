@@ -93,7 +93,8 @@ class SignUpViewController: UIViewController {
                             let regObject: Dictionary<String, Any> = [
                                 "uid" : uid,
                                 "username" : name,
-                                "email": email
+                                "email": email,
+                                "status": "user"
                             ]
                             Database.database().reference().child("users").child(uid).setValue(regObject)
                         }

@@ -20,6 +20,8 @@ class MusicViewController: UIViewController {
     var isOn = false
     var isDownloaded = false
 
+    @IBOutlet weak var leftTimeLabel: UILabel!
+    @IBOutlet weak var startTimeLabel: UILabel!
     @IBOutlet weak var durationView: UIProgressView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var courseLabel: UILabel!
@@ -33,6 +35,11 @@ class MusicViewController: UIViewController {
         courseLabel.text = self.courseName
         downloadFileFromURL(url: URL(string: musicLink)!)
         print("bbb", durationView.progress)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        timer.invalidate()
+        leftTimeLabel.isHidden = true
     }
     
     func setupView(title: String, courseName: String, musicLink: String) {
@@ -64,12 +71,17 @@ class MusicViewController: UIViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
+        if !isDownloaded {
+            return
+        }
+        
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
             
             DispatchQueue.main.async {
                 if let audioPlayer = self.audioPlayer {
                     self.normalizedTime = Float(audioPlayer.currentTime / (audioPlayer.duration))
                     self.durationView.progress = self.normalizedTime
+                    self.startTimeLabel.text = String(String(self.normalizedTime * 10).prefix(1)) + ":0" + String(String(self.normalizedTime * 100).prefix(1))
                 }
             }
             
@@ -77,9 +89,6 @@ class MusicViewController: UIViewController {
                 self.timer.invalidate()
             }
             })
-        if !isDownloaded {
-            return
-        }
         
         if isOn {
             playButton.setBackgroundImage(UIImage(systemName: "play.circle"), for: .normal)
