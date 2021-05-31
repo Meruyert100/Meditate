@@ -32,6 +32,9 @@ class SignUpViewController: UIViewController {
     
     var policyIsChecked = false
     
+    var randomNames = ["Alligator", "Anteater", "Armadillo", "Auroch", "Axolotl" ,"Badger","Bat","Bear", "Beaver" ,"Buffalo","Camel","Capybara","Chameleon","Cheetah","Chinchilla","Chipmunk", "Chupacabra", "Cormorant", "Coyote", "Crow", "Dingo", "Dinosaur", "Dog", "Dolphin", "Duck", "Elephant", "Ferret", "Fox", "Frog", "Giraffe", "Gopher", "Grizzly", "Hedgehog", "Hippo", "Hyena", "Ibex", "Ifrit", "Iguana", "Jackal", "Kangaroo", "Koala", "Kraken", "Lemur", "Leopard", "Liger", "Lion", "Llama", "Loris", "Manatee", "Mink", "Monkey", "Moose", "Narwhal", "Nyan Cat", "Orangutan", "Otter", "Panda", "Penguin", "Platypus", "Pumpkin", "Python", "Quagga", "Rabbit", "Raccoon", "Rhino", "Sheep", "Shrew", "Skunk", "Squirrel", "Tiger", "Turtle", "Walrus", "Wolf", "Wolverine", "Wombat"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -87,12 +90,13 @@ class SignUpViewController: UIViewController {
                             self.createAlert(title: "Wrong email format", message: "Please check again")
                         }
                     } else {
-                        
+                        let rand = Int.random(in: 0...71)
                         if let uid = Auth.auth().currentUser?.uid {
-                            
                             let regObject: Dictionary<String, Any> = [
                                 "uid" : uid,
                                 "username" : name,
+                                "avatar": self.randomNames[rand],
+                                "nickname": "Anonymous \(self.randomNames[rand])",
                                 "email": email,
                                 "status": "user"
                             ]

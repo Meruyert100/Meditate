@@ -8,6 +8,9 @@ target 'Meditate' do
   # Pods for Meditate
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Firestore'
   pod 'ANActivityIndicator'
   pod 'AMTabView'
 end

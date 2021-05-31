@@ -85,6 +85,7 @@ extension CourseDetailsViewController: UITableViewDelegate, UITableViewDataSourc
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell", for: indexPath) as! ImageTableViewCell
             cell.delegate = self
             cell.bannerView.image = courseBanner
+            cell.course = courseName
             cell.selectionStyle = .none
             return cell
         } else if indexPath.row == 1 {

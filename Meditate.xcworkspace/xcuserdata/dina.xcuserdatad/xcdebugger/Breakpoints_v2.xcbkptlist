@@ -7,32 +7,220 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "67424055-8B54-4570-9C6E-8555CC1BDE35"
+            uuid = "27805F9A-9772-4AB9-8593-B296F34BF4CC"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Meditate/Controllers/MusicViewController.swift"
+            filePath = "Meditate/View/Cells/CourseDetailsTable/ImageTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "playButtonPressed(_:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "likeButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2A4D7C95-5537-4E4E-B740-DE095EF9568C"
+            uuid = "783AC37E-9B26-4EA5-A82A-FCD98F50A036"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Meditate/Controllers/MusicViewController.swift"
+            filePath = "Meditate/Controllers/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "playButtonPressed(_:)"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "addToSaved()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A87AF6F4-96C3-488D-84AB-87C84E2A737C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meditate/Controllers/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "addToSaved()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0177F614-1DD2-4F14-B15A-86C1CFCE3AA5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meditate/View/Cells/CourseDetailsTable/ImageTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "isAdded()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9587A42-F698-4260-B5F1-0DFB1CC67091"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meditate/Controllers/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "randomNames"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A9587A42-F698-4260-B5F1-0DFB1CC67091 - 50f5944f4f32204d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meditate.SignUpViewController.randomNames.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Meditate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dina/Desktop/Meditate/Meditate/Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "A9587A42-F698-4260-B5F1-0DFB1CC67091 - d493d0bb5cb1fdb1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meditate.SignUpViewController.randomNames.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Meditate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dina/Desktop/Meditate/Meditate/Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "A9587A42-F698-4260-B5F1-0DFB1CC67091 - cf9e2db88869b03d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meditate.SignUpViewController.randomNames.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Meditate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dina/Desktop/Meditate/Meditate/Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "A9587A42-F698-4260-B5F1-0DFB1CC67091 - 8e71eb3a1a6a2c00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meditate.SignUpViewController.randomNames.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Meditate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dina/Desktop/Meditate/Meditate/Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "A9587A42-F698-4260-B5F1-0DFB1CC67091 - 2ec7fce3dac8aee1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meditate.SignUpViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Meditate.SignUpViewController"
+                  moduleName = "Meditate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dina/Desktop/Meditate/Meditate/Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1300">
+               </Location>
+               <Location
+                  uuid = "A9587A42-F698-4260-B5F1-0DFB1CC67091 - cc20bc8bead8742d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meditate.SignUpViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Meditate.SignUpViewController&gt;"
+                  moduleName = "Meditate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dina/Desktop/Meditate/Meditate/Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2D94E3A-C6C9-4F4E-BF2B-25E02A9861D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meditate/Controllers/MeditateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "loadMeditations()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B87CF4A5-E2EB-4342-AF86-823D05B204C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meditate/Controllers/CoursesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "loadCourses()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6E1A503-FE60-44D7-842C-D9F1A9690CA8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meditate/Controllers/MeditateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "loadStories()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

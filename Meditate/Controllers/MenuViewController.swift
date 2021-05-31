@@ -23,7 +23,7 @@ class MenuViewController: AMTabsViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let coursesViewController = storyboard.instantiateViewController(withIdentifier: "CoursesViewController")
-        let chatViewController = storyboard.instantiateViewController(withIdentifier:"ChatViewController")
+        let chatViewController = storyboard.instantiateViewController(withIdentifier:"ChatsViewController")
         let meditateViewController = storyboard.instantiateViewController(withIdentifier: "MeditateViewController")
         let profileViewController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
 

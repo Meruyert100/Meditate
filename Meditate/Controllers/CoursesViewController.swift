@@ -26,7 +26,7 @@ class CoursesViewController: UIViewController, TabItem {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupCollectionView()
-        startLoading()
+//        startLoading()
         loadCourses()
         loadUserName()
     }
@@ -49,6 +49,7 @@ class CoursesViewController: UIViewController, TabItem {
         collectionView.register(UINib(nibName: "CourseCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CourseCollectionViewCell")
     }
     
+    
     //MARK: - Networking
     
     private func loadUserName() {
@@ -67,6 +68,7 @@ class CoursesViewController: UIViewController, TabItem {
     }
     
     private func loadCourses() {
+        startLoading()
         let ref = Database.database().reference().child("courses")
         
         DispatchQueue.main.async {
@@ -82,8 +84,8 @@ class CoursesViewController: UIViewController, TabItem {
                         self.courses.append(Course(name: name, duration: duration, image: image, description: description, banner: banner))
                         self.collectionView?.reloadData()
                     }
+                    self.stopLoading()
                 }
-                self.stopLoading()
             }) { (error) in
                 print(error.localizedDescription)
             }

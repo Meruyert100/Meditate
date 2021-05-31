@@ -24,7 +24,6 @@ class MeditateViewController: UIViewController, TabItem {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-        startLoading()
         loadMeditations()
         loadStories()
     }
@@ -62,6 +61,7 @@ class MeditateViewController: UIViewController, TabItem {
                         
                         self.storiesCollectionView?.reloadData()
                     }
+                    self.stopLoading()
                 }
             }) { (error) in
                 print(error.localizedDescription)
@@ -70,6 +70,7 @@ class MeditateViewController: UIViewController, TabItem {
     }
     
     private func loadMeditations() {
+        startLoading()
         let ref = Database.database().reference().child("mediations")
         
         DispatchQueue.main.async {
@@ -85,7 +86,6 @@ class MeditateViewController: UIViewController, TabItem {
                         self.collectionView?.reloadData()
                     }
                 }
-                self.stopLoading()
             }) { (error) in
                 print(error.localizedDescription)
             }

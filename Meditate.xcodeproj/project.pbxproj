@@ -20,6 +20,10 @@
 		13D9EB0B262F48DD000CA2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D9EB0A262F48DD000CA2CC /* Assets.xcassets */; };
 		13D9EB0E262F5450000CA2CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9EB0D262F5450000CA2CC /* LoginViewController.swift */; };
 		13D9EB11262F545B000CA2CC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9EB10262F545B000CA2CC /* SignUpViewController.swift */; };
+		365CF53D266361E700B96D1E /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CF53C266361E700B96D1E /* ChatsViewController.swift */; };
+		365CF540266369B300B96D1E /* ChatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CF53E266369B300B96D1E /* ChatsTableViewCell.swift */; };
+		365CF541266369B300B96D1E /* ChatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365CF53F266369B300B96D1E /* ChatsTableViewCell.xib */; };
+		365CF54326641BD500B96D1E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CF54226641BD500B96D1E /* EditViewController.swift */; };
 		36B62D01264E476900E94563 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62CFF264E476800E94563 /* Course.swift */; };
 		36B62D02264E476900E94563 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D00264E476900E94563 /* Message.swift */; };
 		36B62D06264E477C00E94563 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D03264E477B00E94563 /* Story.swift */; };
@@ -33,7 +37,7 @@
 		36B62D18264E47DC00E94563 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D0F264E47DB00E94563 /* CoursesViewController.swift */; };
 		36B62D19264E47DC00E94563 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D10264E47DB00E94563 /* ProfileViewController.swift */; };
 		36B62D1A264E47DC00E94563 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D11264E47DB00E94563 /* TabBarViewController.swift */; };
-		36B62D1B264E47DC00E94563 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D12264E47DB00E94563 /* ChatViewController.swift */; };
+		36B62D1B264E47DC00E94563 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D12264E47DB00E94563 /* MessagesViewController.swift */; };
 		36B62D1C264E47DC00E94563 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D13264E47DC00E94563 /* CourseDetailsViewController.swift */; };
 		36B62D33264E48B800E94563 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B62D1F264E48B500E94563 /* CourseCollectionViewCell.swift */; };
 		36B62D34264E48B800E94563 /* CourseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36B62D20264E48B500E94563 /* CourseCollectionViewCell.xib */; };
@@ -76,6 +80,10 @@
 		13D9EB0A262F48DD000CA2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13D9EB0D262F5450000CA2CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		13D9EB10262F545B000CA2CC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		365CF53C266361E700B96D1E /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		365CF53E266369B300B96D1E /* ChatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewCell.swift; sourceTree = "<group>"; };
+		365CF53F266369B300B96D1E /* ChatsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatsTableViewCell.xib; sourceTree = "<group>"; };
+		365CF54226641BD500B96D1E /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		36B62CFF264E476800E94563 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		36B62D00264E476900E94563 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		36B62D03264E477B00E94563 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
@@ -89,7 +97,7 @@
 		36B62D0F264E47DB00E94563 /* CoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		36B62D10264E47DB00E94563 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		36B62D11264E47DB00E94563 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		36B62D12264E47DB00E94563 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		36B62D12264E47DB00E94563 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		36B62D13264E47DC00E94563 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
 		36B62D1F264E48B500E94563 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
 		36B62D20264E48B500E94563 /* CourseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 		130B7C9E2632965F00DD796A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				365CF5392663614300B96D1E /* ChatsTable */,
 				36B62D22264E48B600E94563 /* ChoiceCollection */,
 				36B62D1E264E48B500E94563 /* CourseCollection */,
 				36B62D28264E48B700E94563 /* CourseDetailsTable */,
@@ -141,7 +150,8 @@
 				13D9EB10262F545B000CA2CC /* SignUpViewController.swift */,
 				13D9EB0D262F5450000CA2CC /* LoginViewController.swift */,
 				132A50FA26315D68004FD21F /* WelcomeViewController.swift */,
-				36B62D12264E47DB00E94563 /* ChatViewController.swift */,
+				365CF53C266361E700B96D1E /* ChatsViewController.swift */,
+				36B62D12264E47DB00E94563 /* MessagesViewController.swift */,
 				36B62D13264E47DC00E94563 /* CourseDetailsViewController.swift */,
 				36B62D0F264E47DB00E94563 /* CoursesViewController.swift */,
 				36B62D0D264E47DB00E94563 /* MeditateViewController.swift */,
@@ -151,6 +161,7 @@
 				36B62D0C264E47DB00E94563 /* StoryViewController.swift */,
 				36B62D11264E47DB00E94563 /* TabBarViewController.swift */,
 				1329F29F26481D7D00AA218B /* PrivacyViewController.swift */,
+				365CF54226641BD500B96D1E /* EditViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +249,15 @@
 			path = Meditate;
 			sourceTree = "<group>";
 		};
+		365CF5392663614300B96D1E /* ChatsTable */ = {
+			isa = PBXGroup;
+			children = (
+				365CF53E266369B300B96D1E /* ChatsTableViewCell.swift */,
+				365CF53F266369B300B96D1E /* ChatsTableViewCell.xib */,
+			);
+			path = ChatsTable;
+			sourceTree = "<group>";
+		};
 		36B62D1E264E48B500E94563 /* CourseCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,10 +288,10 @@
 			isa = PBXGroup;
 			children = (
 				36B62D29264E48B700E94563 /* SongsTableViewCell.swift */,
+				36B62D2D264E48B700E94563 /* SongsTableViewCell.xib */,
+				36B62D2C264E48B700E94563 /* DescriptionTableViewCell.swift */,
 				36B62D2A264E48B700E94563 /* DescriptionTableViewCell.xib */,
 				36B62D2B264E48B700E94563 /* ImageTableViewCell.swift */,
-				36B62D2C264E48B700E94563 /* DescriptionTableViewCell.swift */,
-				36B62D2D264E48B700E94563 /* SongsTableViewCell.xib */,
 				36B62D2E264E48B700E94563 /* ImageTableViewCell.xib */,
 			);
 			path = CourseDetailsTable;
@@ -373,6 +393,7 @@
 				138873B02641A9440043A7F9 /* Localizable.strings in Resources */,
 				36B62D43264E4B2D00E94563 /* GoogleService-Info.plist in Resources */,
 				36B62D39264E48B800E94563 /* MessageTableViewCell.xib in Resources */,
+				365CF541266369B300B96D1E /* ChatsTableViewCell.xib in Resources */,
 				36B62D34264E48B800E94563 /* CourseCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B62D08264E477C00E94563 /* Meditation.swift in Sources */,
+				365CF540266369B300B96D1E /* ChatsTableViewCell.swift in Sources */,
 				13D9EB0E262F5450000CA2CC /* LoginViewController.swift in Sources */,
 				36B62D41264E48B800E94563 /* StoriesCollectionViewCell.swift in Sources */,
 				36B62D1A264E47DC00E94563 /* TabBarViewController.swift in Sources */,
@@ -445,13 +467,15 @@
 				36B62D16264E47DC00E94563 /* MeditateViewController.swift in Sources */,
 				36B62D33264E48B800E94563 /* CourseCollectionViewCell.swift in Sources */,
 				132A50FB26315D68004FD21F /* WelcomeViewController.swift in Sources */,
+				365CF54326641BD500B96D1E /* EditViewController.swift in Sources */,
 				36B62D06264E477C00E94563 /* Story.swift in Sources */,
 				36B62D36264E48B800E94563 /* ChoiceCollectionViewCell.swift in Sources */,
 				138873CA2641B94A0043A7F9 /* Helper.swift in Sources */,
-				36B62D1B264E47DC00E94563 /* ChatViewController.swift in Sources */,
+				36B62D1B264E47DC00E94563 /* MessagesViewController.swift in Sources */,
 				36B62D38264E48B800E94563 /* MessageTableViewCell.swift in Sources */,
 				36B62D3C264E48B800E94563 /* ImageTableViewCell.swift in Sources */,
 				36B62D07264E477C00E94563 /* Songs.swift in Sources */,
+				365CF53D266361E700B96D1E /* ChatsViewController.swift in Sources */,
 				36B62D02264E476900E94563 /* Message.swift in Sources */,
 				13A6A4FD262AF6590091E606 /* SceneDelegate.swift in Sources */,
 				36B62D19264E47DC00E94563 /* ProfileViewController.swift in Sources */,
@@ -624,6 +648,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX65PMA448;
 				INFOPLIST_FILE = Meditate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,6 +668,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX65PMA448;
 				INFOPLIST_FILE = Meditate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
